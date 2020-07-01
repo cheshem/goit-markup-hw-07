@@ -1,0 +1,45 @@
+.section-text {
+  margin-top: 0;
+  margin-bottom: 50px;
+  font-weight: 700;
+  color: $title-text-color;
+  text-align: center;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+}
+.doing .list {
+  display: flex;
+}
+.doing .item {
+  position: relative;
+  margin-right: 30px;
+  width: calc((100% - 60px) / 3);
+  text-align: center;
+}
+
+.doing img {
+  display: block;
+}
+.doing-text {
+  position: absolute;
+  width: 100%;
+  height: 70px;
+  bottom: 0;
+  margin: 0;
+  padding: 27px;
+  background: $bgc-color;
+  border-radius: 0px 0px 4px 4px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  color: $white-color;
+  text-align: center;
+  text-transform: uppercase;
+}
+.doing .item:nth-child(3) {
+  margin-bottom: 0;
+}
+.doing .item:nth-child(3) {
+  margin-right: 0;
+}

@@ -1,0 +1,19 @@
+// загальні стилі сайту
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: $primary-text-color;
+  background-color: var(--background-color);
+  letter-spacing: 0.03em;
+  margin: 0;
+}

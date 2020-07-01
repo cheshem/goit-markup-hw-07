@@ -1,12 +1,108 @@
-body {
-  margin: 0;
-  font-family: $font-body;
-  color: $primary-text-color;
-}
 .container {
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+}
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+.site-nav .link {
+  position: relative;
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  /* color: var(--title-text-color); */
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /* text-decoration: none; */
+}
+.link {
+  text-decoration: none;
+}
+.site-nav {
+  display: flex;
+  margin-left: 85px;
+}
+.contacts-text {
+  color: $primary-text-color;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.cont-nav .mail-icon {
+  margin-right: 10px;
+  fill: currentColor;
+  cursor: pointer;
+}
+.site-nav .link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: $accent-color;
+  border-radius: 2px;
+  opacity: 0;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.logo-studio {
+  color: #000000;
+  margin-right: 85px;
+}
+.logo-web {
+  color: $accent-color;
+}
+.logo-head {
+  color: var(--title-text-color);
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+  letter-spacing: 0.03em;
+}
+
+.site-nav .item + .item {
+  margin-left: 50px;
+}
+.site-nav .link.current {
+  color: $accent-color;
+}
+.cont-nav {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+}
+.cont-nav > .item {
+  margin-left: 30px;
+}
+.cont-nav .mail-icon {
+  margin-right: 10px;
+  fill: currentColor;
+  cursor: pointer;
+}
+.cont-nav .tel-icon {
+  margin-right: 10px;
+  fill: currentColor;
+  cursor: pointer;
+}
+.contacts-text:focus,
+.contacts-text:hover {
+  color: $accent-color;
+  fill: $accent-color;
+}
+.site-nav .link.current::after {
+  opacity: 1;
 }
