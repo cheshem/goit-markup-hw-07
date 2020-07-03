@@ -733,11 +733,6 @@ body {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.link {
-  color: #2196f3;
-  fill: #2196f3;
-}
-
 .box .social-icon {
   background-color: transparent;
   fill: #afb1b8;
@@ -747,19 +742,9 @@ body {
   margin-right: 0;
 }
 
-.box .link:hover,
-.box .link:focus {
-  background-color: #2196f3;
-}
-
 .box .social-icon:hover,
 .box .social-icon:focus {
   fill: #ffffff;
-}
-
-.box .social-icon {
-  background-color: transparent;
-  fill: #afb1b8;
 }
 
 .customer .list {
@@ -1208,8 +1193,8 @@ body {
   justify-items: center;
 }
 
-.social .social-icon {
-  fill: currentColor;
+.social .social-icons {
+  fill: #ffffff;
 }
 
 .foot-link .social .item {
