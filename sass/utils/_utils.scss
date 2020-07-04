@@ -1,11 +1,16 @@
 .list {
   list-style: none;
+
   margin: 0;
   padding: 0;
 }
 .link {
   color: $accent-color;
   fill: $accent-color;
+}
+li {
+  list-style-type: none;
+  /* Убираем маркеры */
 }
 .link {
   text-decoration: none;

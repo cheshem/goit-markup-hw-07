@@ -50,26 +50,23 @@
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-// .link {
-//   color: $accent-color;
-//   fill: $accent-color;
-// }
+
 .box .social-icon {
   background-color: transparent;
   fill: $social-color;
+  &:hover,
+  &:focus {
+    fill: $white-color;
+    &:hover,
+    &:focus {
+      fill: $white-color;
+      &:hover,
+      &:focus {
+        fill: $white-color;
+      }
+    }
+  }
 }
 .team .item:nth-child(4) {
   margin-right: 0;
 }
-// .box .link:hover,
-// .box .link:focus {
-//   background-color: $accent-color;
-// }
-.box .social-icon:hover,
-.box .social-icon:focus {
-  fill: $white-color;
-}
-// .box .social-icon {
-//   background-color: transparent;
-//   fill: $social-color;
-// }
