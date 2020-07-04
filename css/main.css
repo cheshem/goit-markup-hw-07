@@ -389,16 +389,7 @@ summary {
 }
 
 .link:hover,
-.link:focus,
-.studio:hover,
-.portfolio:hover,
-.portfolio:focus,
-.contact:hover,
-.contact:focus,
-.primary:hover,
-.primary:focus,
-.secondary:hover,
-.secondary:focus {
+.link:focus {
   color: #2196f3;
   background-color: #ffffff;
 }

@@ -109,16 +109,7 @@
   opacity: 1;
 }
 .link:hover,
-.link:focus,
-.studio:hover,
-.portfolio:hover,
-.portfolio:focus,
-.contact:hover,
-.contact:focus,
-.primary:hover,
-.primary:focus,
-.secondary:hover,
-.secondary:focus {
+.link:focus {
   color: $accent-color;
   background-color: $white-color;
 }
