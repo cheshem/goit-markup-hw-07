@@ -28,9 +28,10 @@
     }
   }
 }
-.container-btn li:nth-child(5n) {
-  margin-right: 0;
-}
+
 .container-btn li {
   margin-right: 8px;
+  &:nth-child(5n) {
+    margin-right: 0;
+  }
 }

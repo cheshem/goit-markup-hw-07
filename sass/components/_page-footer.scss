@@ -2,30 +2,49 @@
   min-height: 253px;
   background-color: #2f303a;
   color: $white-color;
+  .address {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
+  .container.info {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding-top: 48px;
+    padding-bottom: 28px;
+    .list {
+      font-size: 15px;
+
+      line-height: 1.6;
+      letter-spacing: -0.015em;
+      color: $backgraund-bg-color;
+    }
+  }
 }
-.page-footer .container.info {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  padding-top: 48px;
-  padding-bottom: 28px;
-}
+
 .foot-child .logo-foot {
   background-color: $backgraund-bg-color;
 }
-.page-footer .address {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-}
+
 .logo-foot {
-  color: $white-color;
+  color: $title-text-color;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.8;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  .logo-foot {
+    color: $white-color;
+    .link {
+      background-color: $backgraund-bg-color;
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+  }
 }
-.logo-foot .link {
-  background-color: $backgraund-bg-color;
-  display: inline-block;
-  margin-bottom: 10px;
-}
+
 .address.company {
   color: $white-color;
   margin-bottom: 9px;
@@ -75,13 +94,6 @@
   letter-spacing: -0.015em;
   color: $white-color;
 }
-.page-footer .list {
-  font-size: 15px;
-
-  line-height: 1.6;
-  letter-spacing: -0.015em;
-  color: $backgraund-bg-color;
-}
 .button.primary {
   display: inline-flex;
   align-items: center;
@@ -99,23 +111,25 @@
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-}
-.button.primary::after {
-  content: "";
+  &::after {
+    content: "";
 
-  width: 24px;
-  height: 24px;
-  margin-left: 10px;
-  background-image: url("../images/icon-send.svg");
-  background-size: contain;
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    background-image: url("../images/icon-send.svg");
+    background-size: contain;
+  }
 }
+
 .social .list {
   display: flex;
   justify-items: center;
+  .social-icons {
+    fill: $white-color;
+  }
 }
-.social .social-icons {
-  fill: $white-color;
-}
+
 .foot-link .social .item {
   margin-right: 10px;
 }

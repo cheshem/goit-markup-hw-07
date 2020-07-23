@@ -5,8 +5,12 @@
   padding-left: 15px;
   padding-right: 15px;
 }
-.adventage .list {
+.adventage {
   display: flex;
+  .iteam {
+    margin-right: 30px;
+    width: calc((100% - 90px) / 4);
+  }
 }
 .feature-list,
 .text {
@@ -17,10 +21,10 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
-.adventage .iteam {
-  margin-right: 30px;
-  width: calc((100% - 90px) / 4);
-}
+// .adventage .iteam {
+//   margin-right: 30px;
+//   width: calc((100% - 90px) / 4);
+// }
 .backgraund-icon {
   display: flex;
   justify-content: center;
@@ -48,12 +52,3 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-// .feature-list,
-// .text {
-//   margin-top: 0;
-//   margin-bottom: 0;
-//   font-weight: 400;
-//   font-size: 14px;
-//   line-height: 1.71;
-//   letter-spacing: 0.03em;
-// }
